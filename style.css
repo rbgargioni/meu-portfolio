@@ -1,0 +1,52 @@
+:root {
+    --primary: #00d4ff;
+    --dark: #121212;
+    --card-bg: #1e1e1e;
+    --text: #ffffff;
+    --gray: #a0a0a0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background-color: var(--dark); color: var(--text); line-height: 1.6; }
+
+/* Header & Nav */
+header { padding: 1rem 5%; background: rgba(0,0,0,0.8); position: fixed; width: 100%; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--primary); }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+nav ul li a:hover { color: var(--primary); }
+
+/* Hero */
+.hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80'); background-size: cover; }
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero h1 span { color: var(--primary); }
+.btn { margin-top: 20px; padding: 12px 30px; background: var(--primary); color: #000; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+.btn:hover { transform: scale(1.1); }
+
+/* Projetos */
+.container { padding: 80px 5%; }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+.grid-projetos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+.card { background: var(--card-bg); border-radius: 10px; overflow: hidden; transition: 0.3s; border: 1px solid #333; }
+.card:hover { transform: translateY(-10px); border-color: var(--primary); }
+.card-img { height: 180px; background-size: cover; background-position: center; }
+.card-content { padding: 20px; }
+.tags { margin: 15px 0; }
+.tags span { background: #333; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; margin-right: 5px; color: var(--primary); }
+.link-proj { color: var(--primary); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+
+/* Experiencia */
+.exp-section { background: #1a1a1a; padding: 60px 5%; }
+.exp-box { background: var(--card-bg); padding: 30px; border-left: 4px solid var(--primary); border-radius: 5px; }
+.exp-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.tag-special { background: var(--primary) !important; color: #000 !important; font-weight: bold; }
+
+/* Footer */
+footer { padding: 40px; text-align: center; border-top: 1px solid #333; }
+.social-links { margin-top: 20px; }
+.social-links a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1rem; }
+.social-links a:hover { color: var(--primary); }
